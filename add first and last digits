@@ -1,0 +1,8 @@
+# Add the first and last digits of a given number
+digit = int(input('Please enter the digit to add its first and last  digit : '))
+last_digit = digit % 10
+digit = digit/10
+while digit > 10:
+    digit = digit / 10
+sum_of_digits = int(last_digit + digit)
+print(sum_of_digits)
